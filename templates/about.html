@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h2 {
+            color: #007bff;
+        }
+        h4 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- About Us Page -->
+<div id="about-page" class="container">
+    <h2>About Us</h2>
+    <p>Welcome to our web application designed for detecting malicious URLs. We are the <strong>MindMelders</strong>, a team dedicated to improving cybersecurity through advanced machine learning techniques.</p>
+    
+    <h4>Our Mission</h4>
+    <p>Our mission is to provide robust solutions for identifying and preventing threats from malicious URLs. By leveraging machine learning models and data analysis, we aim to enhance online safety and protect users from cyber threats.</p>
+    
+    <h4>Our Team</h4>
+    <p>Our team consists 5 members who work on projects like  cybersecurity and machine learning. Each member brings a unique set of skills and expertise to the project:</p>
+    <p>Our backend uses a combination of Scikit-learn models and text vectorization techniques to analyze URLs. Here’s a brief overview of how it works:</p>
+    
+    <h3>Backend Workflow</h3>
+    
+    <ol>
+        <li><strong>Data Preparation:</strong> We load and preprocess data from a CSV file, removing any missing values.</li>
+        <li><strong>Data Splitting:</strong> The dataset is split into training and testing sets.</li>
+        <li><strong>Feature Extraction:</strong> We use Count Vectorizer and TF-IDF Vectorizer to convert URLs into numerical features.</li>
+        <li><strong>Model Training:</strong> We train four models: Multinomial Naive Bayes (Count Vectorizer), Multinomial Naive Bayes (TFIDF), Logistic Regression (Count Vectorizer), and Logistic Regression (TFIDF).</li>
+        <li><strong>Model Evaluation:</strong> Each model is evaluated using accuracy, confusion matrix, and classification report. Results are visualized using a heatmap.</li>
+        <li><strong>Prediction:</strong> For a given URL, predictions are made using all trained models to determine if the URL is benign or malicious.</li>
+    </ol>
+    
+    <h4>The Application</h4>
+    <p>Our application is designed to analyze and classify URLs as either benign or malicious. It uses machine learning models to evaluate URL characteristics and predict their potential threat level. The application provides a user-friendly interface for submitting URLs, viewing analysis results, and accessing other features like feedback and help.</p>
+    
+    <h4>Contact Us</h4>
+    <p>If you have any questions or need further information, feel free to reach out to us:</p>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:mindmelder05@gmail.com">mindmelder05@gmail.com</a></li>
+
+    </ul>
+    
+    <a href="{{ url_for('index') }}"><button>Back to Home</button></a>
+</div>
+
+</body>
+</html>

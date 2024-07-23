@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h3, h4 {
+            color: #007bff;
+        }
+        .user-manual {
+            line-height: 1.6;
+        }
+        ol, ul {
+            margin: 0 0 10px 20px;
+        }
+        ul {
+            list-style-type: disc;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .back-button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Help Page -->
+<div id="help-page" class="container">
+    <h3>User Manual</h3>
+    <div class="user-manual">
+        <p>Welcome to our web application! This manual will guide you through the steps to log in, navigate through different pages, and use the features available in the application.</p>
+        <h4>Login Page</h4>
+        <ol>
+            <li><strong>Open the Application:</strong> Navigate to the web application URL in your web browser.</li>
+            <li><strong>Enter Your Username:</strong> Type your desired username in the “Username” field.</li>
+            <li><strong>Enter Your Email:</strong> Type your email address in the “Email” field.</li>
+            <li><strong>Enter Your Password:</strong> Type your password in the “Password” field.</li>
+            <li><strong>Click “Login”:</strong> Press the “Login” button to submit your credentials.</li>
+            <li><strong>Access Home Page:</strong> You will be redirected to the Home Page after a successful login.</li>
+        </ol>
+
+        <h4>Home Page</h4>
+        <ol>
+            <li><strong>Toggle Dark Mode:</strong> Click the “Toggle Dark Mode” button to switch between light and dark themes.</li>
+            <li><strong>Submit a URL for Analysis:</strong> 
+                <ul>
+                    <li>Enter the URL: Type the URL you wish to analyze in the “Enter URL” field.</li>
+                    <li>Submit the URL: Click the “Submit” button (this will be enabled if the URL is valid).</li>
+                    <li>View Results: After submission, you will be redirected to the Result Page.</li>
+                </ul>
+            </li>
+            <li><strong>Give Feedback:</strong>
+                <ul>
+                    <li>Click “Give Feedback” Button: This will reveal the feedback form.</li>
+                    <li>Enter Feedback: Type your feedback in the “Your Feedback” field.</li>
+                    <li>Submit Feedback: Click the “Submit Feedback” button to send your feedback.</li>
+                </ul>
+            </li>
+            <li><strong>Access Other Pages:</strong>
+                <ul>
+                    <li>Profile Page: Click the profile icon to go to the Profile Page.</li>
+                    <li>Help Page: Click the “Help” button for help and FAQs.</li>
+                    <li>About Us Page: Click the “About Us” button for information about the team and project.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h4>Profile Page</h4>
+        <ol>
+            <li><strong>View Profile Information:</strong> See your stored email displayed on the page.</li>
+            <li><strong>View Recent Activity:</strong> Check the list of URLs you have submitted under “Recent Activity.”</li>
+            <li><strong>Return to Home Page:</strong> Click the “Home” button to navigate back to the Home Page.</li>
+        </ol>
+
+        <h4>Help Page</h4>
+        <ol>
+            <li><strong>Read FAQ:</strong> Browse through the frequently asked questions and answers.</li>
+            <li><strong>Return to Home Page:</strong> Click the “Home” button to navigate back to the Home Page.</li>
+        </ol>
+
+        <h4>Result Page</h4>
+        <ol>
+            <li><strong>View Analysis Results:</strong>
+                <ul>
+                    <li>Check Accuracy: Review the accuracy of the URL analysis.</li>
+                    <li>Check Malicious Status: See if the URL was flagged as malicious.</li>
+                    <li>View Graph: Look at the graph (if available) that visualizes the analysis.</li>
+                </ul>
+            </li>
+            <li><strong>Return to Home Page:</strong> Click the “Home” button to navigate back to the Home Page.</li>
+        </ol>
+
+        <h4>About Us Page</h4>
+        <ol>
+            <li><strong>Read Information:</strong> Read about the team and the project details.</li>
+            <li><strong>Return to Home Page:</strong> Click the “Home” button to navigate back to the Home Page.</li>
+        </ol>
+
+        <h4>Troubleshooting and Tips</h4>
+        <ul>
+            <li><strong>Login Issues:</strong> Ensure your username, email, and password are correct.</li>
+            <li><strong>URL Submission:</strong> Make sure the URL is valid and includes http:// or https://.</li>
+            <li><strong>Feedback Form:</strong> Ensure that feedback is entered before submission.</li>
+            <li><strong>Dark Mode:</strong> Toggle dark mode for better visibility or personal preference.</li>
+        </ul>
+
+        <h4>Contact Support</h4>
+        <p>If you encounter any issues, please contact our support team:</p>
+        <ul>
+            <li><strong>Email:</strong> support@webapp.com</li>
+            <li><strong>Phone:</strong> (123) 456-7890</li>
+        </ul>
+
+        <h4>Summary</h4>
+        <p>This manual covers the essential steps for using the web application:</p>
+        <ul>
+            <li>Login Page: Enter credentials and log in.</li>
+            <li>Home Page: Submit URLs, provide feedback, and navigate to other pages.</li>
+            <li>Profile Page: View profile details and recent activity.</li>
+            <li>Help Page: Read FAQs for support.</li>
+            <li>Result Page: Review URL analysis results.</li>
+            <li>About Us Page: Learn about the team and project.</li>
+        </ul>
+        <p>Refer to this manual whenever you need guidance on how to use the features of the web application.</p>
+    </div>
+    <div class="back-button-container">
+        <a href="{{ url_for('index') }}"><button>Back to Home</button></a>
+    </div>
+</div>
+
+</body>
+</html>
